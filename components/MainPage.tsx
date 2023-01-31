@@ -1,15 +1,11 @@
-import { ExternalLinkIcon, LightBulbIcon } from "@heroicons/react/outline";
-import { Variants, motion, useAnimationControls } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { Variants, motion } from "framer-motion";
 
-import CustomCursor from "./CustomCursor";
 import GlassCard from "./GlassCard";
 import Layout from "./Layout";
+import { LightBulbIcon } from "@heroicons/react/outline";
 import Link from "next/link";
 import TextLoop from "./TextLoop";
-import Typed from "typed.js";
 import { useCursor } from "../context/CursorContext";
-import useDebounce from "../lib/useDebounce";
 
 const physics = { damping: 15, mass: 1.5, stiffness: 100 };
 

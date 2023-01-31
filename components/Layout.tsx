@@ -1,6 +1,5 @@
-import { Variants, motion } from "framer-motion";
-
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { useCursor } from "../context/CursorContext";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {

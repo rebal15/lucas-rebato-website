@@ -1,6 +1,5 @@
 import { ExternalLinkIcon } from "@heroicons/react/outline";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { useCursor } from "../context/CursorContext";
 
 interface GlassCardProps {

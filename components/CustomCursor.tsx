@@ -1,5 +1,5 @@
 import { Variants, motion, useMotionValue, useSpring } from "framer-motion";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect } from "react";
 
 export enum CursorType {
     Default,

@@ -1,8 +1,5 @@
-import { Dispatch, SetStateAction, useEffect, useState } from "react";
-import { Variants, motion, useAnimationControls } from "framer-motion";
-
-import { ChevronDoubleDownIcon } from "@heroicons/react/outline";
-import CustomCursor from "./CustomCursor";
+import { Dispatch, SetStateAction } from "react";
+import { Variants, motion } from "framer-motion";
 
 const physics = { damping: 30, mass: 1, stiffness: 200 };
 

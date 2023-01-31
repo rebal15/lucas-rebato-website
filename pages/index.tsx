@@ -1,38 +1,8 @@
-import {
-    AnimatePresence,
-    AnimateSharedLayout,
-    MotionValue,
-    VariantLabels,
-    Variants,
-    m,
-    motion,
-    useMotionValue,
-    useScroll,
-    useSpring,
-    useTransform,
-} from "framer-motion";
-import {
-    ChevronDoubleDownIcon,
-    ChevronDownIcon,
-} from "@heroicons/react/outline";
-import { SmoothScrollContext, SmoothScrollProvider } from "../lib/scroll";
-import { useContext, useEffect, useRef, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
-import CustomCursor from "../components/CustomCursor";
 import Loader from "../components/Loader";
 import MainPage from "../components/MainPage";
-import { classNames } from "../lib/utils";
-
-function useParallax(value: MotionValue<number>, distance: number) {
-    return useTransform(value, [0, 1], [-distance, distance]);
-}
-
-const navigation = [
-    { name: "Product", href: "#" },
-    { name: "Features", href: "#" },
-    { name: "Marketplace", href: "#" },
-    { name: "Company", href: "#" },
-];
 
 const Index = () => {
     const [loading, setLoading] = useState(true);
