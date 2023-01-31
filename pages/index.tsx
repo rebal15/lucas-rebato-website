@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 
 import Loader from "../components/Loader";
 import MainPage from "../components/MainPage";
+import { NextSeo } from "next-seo";
 
 const Index = () => {
     const [loading, setLoading] = useState(true);
@@ -14,15 +15,37 @@ const Index = () => {
     }, [loading]);
 
     return (
-        <AnimatePresence mode="wait">
-            {loading ? (
-                <motion.div key="loader">
-                    <Loader setLoading={setLoading} />
-                </motion.div>
-            ) : (
-                <MainPage />
-            )}
-        </AnimatePresence>
+        <>
+            <NextSeo
+                title="Lucas Rebato | Software Engineer"
+                description="Redeveloping the everyday. Software Engineer based in London."
+                canonical="https://lucasrebato.com/"
+                openGraph={{
+                    url: "https://lucasrebato.com/",
+                    title: "Lucas Rebato | Software Engineer",
+                    description:
+                        "Redeveloping the everyday. Software Engineer based in London.",
+                    images: [
+                        {
+                            url: "https://lucasrebato.com/logo-192.png",
+                            width: 192,
+                            height: 192,
+                            alt: "Lucas Rebato | Software Engineer",
+                        },
+                    ],
+                    type: "website",
+                }}
+            />
+            <AnimatePresence mode="wait">
+                {loading ? (
+                    <motion.div key="loader">
+                        <Loader setLoading={setLoading} />
+                    </motion.div>
+                ) : (
+                    <MainPage />
+                )}
+            </AnimatePresence>
+        </>
     );
 };
 
