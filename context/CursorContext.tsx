@@ -1,6 +1,8 @@
 import CustomCursor, { CursorType } from "../components/CustomCursor";
 import React, { createContext, useContext, useState } from "react";
 
+import { isMobile } from "react-device-detect";
+
 interface CursorContextType {
     cursorType: CursorType;
     changeCursor: (cursorType: CursorType) => void;
@@ -47,7 +49,7 @@ const CursorContextProvider = ({
                 hideCursor,
             }}
         >
-            <CustomCursor type={cursorType} />
+            {!isMobile && <CustomCursor type={cursorType} />}
             {children}
         </CursorContext.Provider>
     );
