@@ -23,7 +23,7 @@ const GlassCard = ({
         <div>
             <div className="w-full h-full relative">
                 <div className="hidden lg:block border border-primary rounded-lg lg:w-4/5 mx-auto mb-6 lg:mb-0 lg:mr-auto lg:relative">
-                    <span className="absolute top-0 left-0 w-full h-full bg-black rounded-lg bg-opacity-50"></span>
+                    <span className="absolute top-0 left-0 w-full h-full bg-black rounded-lg bg-opacity-70"></span>
                     <img
                         className="my-auto shadow-lg rounded-lg group-hover:opacity-75 w-full"
                         src={image}
@@ -33,7 +33,6 @@ const GlassCard = ({
 
                 <div className="lg:top-1/4 lg:w-4/5 lg:absolute lg:right-1/4 border-primary border-2 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-filter backdrop-blur-2xl h-full lg:h-auto">
                     <div className="border border-primary rounded-lg mx-auto mb-6 lg:hidden">
-                        <span className="absolute top-0 left-0 w-full h-full bg-black rounded-lg bg-opacity-20"></span>
                         <img
                             className="my-auto shadow-lg rounded-lg group-hover:opacity-75 w-full"
                             src={image}

@@ -196,6 +196,14 @@ const MainPage = () => {
                     <div className="w-full mt-16">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-20 lg:gap-y-48 gap-x-12">
                             <GlassCard
+                                title="18th Purley Scout Group"
+                                tags={["Next.js", "AWS", "Strapi"]}
+                                description="I designed and built this website for the 18th Purley Scout Group. It uses a modern CMS, and is hosted serverlessly. To manage costs, the backend is only deployed during editing and frontend buildtime."
+                                link="https://18thpurley.org.uk"
+                                image="/18th-purley.png"
+                            />
+
+                            <GlassCard
                                 title="MentorZone"
                                 tags={["Next.js", "Typescript", "Tailwind"]}
                                 description="I designed and built this website for a student-led education/careers startup, MentorZone."
@@ -217,14 +225,6 @@ const MainPage = () => {
                                 description="I have developed, upgraded, and maintained an unofficial companion website Infinite Flight, a leading mobile flight simulator."
                                 link="https://ifatc.org"
                                 image="/ifatc.png"
-                            />
-
-                            <GlassCard
-                                title="Personal Website"
-                                tags={["Next.js", "Animation", "Tailwind"]}
-                                description="This website! I took the opportunity to learn how to design and implement micro-interactions for delightful user experiences."
-                                link="https://lucasrebato.com"
-                                image="/portfolio.png"
                             />
                         </div>
                     </div>
