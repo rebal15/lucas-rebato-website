@@ -130,9 +130,10 @@ const MainPage = () => {
                     <div className="max-w-2xl">
                         <div>
                             <p className="text-primary text-opacity-50 text-lg mt-8">
-                                Hi! My name is Lucas. I&apos;m a student
-                                (currently studying for my A Levels), with a
-                                hope to read Computer Science at university.
+                                Hi! My name is Lucas. I&apos;m a student,
+                                currently studying Computer Science at the
+                                University of Birmingham, in partnership with
+                                PwC.
                             </p>
                             <p className="text-primary text-opacity-50 text-lg mt-8">
                                 I love a challenge, and I&apos;m always looking
@@ -168,11 +169,11 @@ const MainPage = () => {
                                 </li>
                                 <li className="flex items-center space-x-3">
                                     <LightBulbIcon className="flex-shrink w-5 h-5 text-yellow-400" />
-                                    <span>NodeJS</span>
+                                    <span>Docker</span>
                                 </li>
                                 <li className="flex items-center space-x-3">
                                     <LightBulbIcon className="flex-shrink w-5 h-5 text-yellow-400" />
-                                    <span>Docker</span>
+                                    <span>AWS</span>
                                 </li>
                             </ul>
                         </div>
@@ -255,7 +256,7 @@ const MainPage = () => {
                             <Link
                                 onMouseOver={hoverCursor}
                                 onMouseLeave={defaultCursor}
-                                href="https://www.linkedin.com/in/lucas-rebato-135a39225/"
+                                href="https://www.linkedin.com/in/lucas-rebato/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-primary font-semibold px-3 py-2 rounded-lg"
