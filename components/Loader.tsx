@@ -11,15 +11,6 @@ const containerVariants: Variants = {
     },
 };
 
-const arrowVariants: Variants = {
-    initial: {
-        marginLeft: 0,
-    },
-    hover: {
-        marginLeft: 5,
-    },
-};
-
 const greetingVariants: Variants = {
     initial: {
         opacity: 0,
@@ -65,27 +56,6 @@ const jobVariants: Variants = {
     },
 };
 
-const buttonVariants: Variants = {
-    initial: {
-        y: 0,
-        opacity: 1,
-        scale: 1,
-    },
-    hover: {
-        y: 0,
-        opacity: 1,
-        scale: 1.1,
-    },
-    exit: {
-        y: 50,
-        scale: 1,
-        opacity: 0,
-        transition: {
-            duration: 2,
-        },
-    },
-};
-
 const handEmojiVariants: Variants = {
     initial: {
         rotate: 0,
@@ -123,7 +93,7 @@ const Loader = ({
             >
                 <motion.h1
                     variants={greetingVariants}
-                    className="font-bold tracking-normal text-center text-6xl text-primary mt-80"
+                    className="font-bold tracking-normal text-center text-4xl lg:text-6xl text-primary mt-80"
                 >
                     <motion.div
                         variants={handEmojiVariants}
